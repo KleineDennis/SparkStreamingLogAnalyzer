@@ -41,7 +41,7 @@ object StreamingLogAnalyzer {
 
     val Array(brokers, groupId, topics) = args
 
-    val conf = new SparkConf().setAppName("Spark-Streaming Log Analyzer").setMaster("local[*]")
+    val conf = new SparkConf().setAppName("Spark-Streaming Log Analyzer") //.setMaster("local[*]")
     val ssc = new StreamingContext(conf, Seconds(1))
     ssc.checkpoint("/Users/denniskleine/Documents/workspace/checkpoint")
 
