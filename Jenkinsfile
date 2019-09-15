@@ -29,7 +29,7 @@ pipeline {
 
         stage('Assembly') {
             steps {
-                echo "assembling..."
+                echo "Assembling..."
                 sh "sbt assembly"
             }
         }
