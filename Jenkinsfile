@@ -27,5 +27,12 @@ pipeline {
             }
         }
 
+        stage('Assembly') {
+            steps {
+                echo "assembling..."
+                sh "sbt assembly"
+            }
+        }
+
     }
 }
